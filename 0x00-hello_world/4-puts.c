@@ -1,13 +1,9 @@
 #include <stdio.h>
-
 /**
- * Program to use puts
+ *main - entry point
  *
- * Not allowed to use printf
- *
- * Should end with valuz zero
+ *Return: 0 after printing the function
  */
-
 int main(void)
 
 {

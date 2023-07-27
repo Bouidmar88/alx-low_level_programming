@@ -1,23 +1,26 @@
 #include "main.h"
 
 /**
- *_strcat - function appends the @src string to the @dest string, overwriting the terminating null byte at the end of @dest
- *@dest: String that will be appended
- *@src: String to be overwritten
- *
- * Return: returns pointer to @dest
+ * _strcat - concat 2 string
+ * @dest: char
+ * @src: char
+ * Return: a pointer to the resulting string
  */
-
 char *_strcat(char *dest, char *src)
 {
+	char *s = dest;
 
-	int index = 0, dest_len = 0;
+	while (*dest != '\0')
+	{
+		dest++;
+	}
 
-	while (dest[index++])
-		dest_len++;
-
-	for (index = 0; src[index]; index++)
-		dest[dest_len++] = src[index];
-
-	return (dest);
+	while (*src != '\0')
+	{
+		*dest = *src;
+		dest++;
+		src++;
+	}
+	*dest = '\0';
+	return (s);
 }

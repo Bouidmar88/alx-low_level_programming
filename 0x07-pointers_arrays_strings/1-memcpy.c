@@ -8,14 +8,15 @@
 * @n: type char bytes from src to dest
 * Return: dest.
 */
+
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-		unsigned int z;
+	unsigned int z;
 
-			for (z = 0; z < n; z++)
-					{
-								dest[z] = src[z];
-									}
+	for (z = 0; z < n; z++)
+	{
+		dest[z] = src[z];
+	}
 
-				return (dest);
+	return (dest);
 }
